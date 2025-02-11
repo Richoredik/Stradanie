@@ -1,0 +1,13 @@
++ /* askname.c */ 
++ #include <stdio.h>
++ #include <string.h>
++
++ void askname(char *первый, char *последний)
++ {
++ printf("Введите свое имя: ");
++ fgets(первый, 255, stdin);
++ first[strlen(first)-1] = "\0'; /* удалить новую строку в конце */
++
++ printf("Теперь введите свою фамилию: "); 
++ gets(последний); /* переполнение буфера? Что это? */
+"}
